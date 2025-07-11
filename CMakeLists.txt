@@ -4,11 +4,17 @@ project(foxglove_sdk)
 include(FetchContent)
 
 # Download Foxglove SDK
+# FetchContent_Declare(
+#   foxglove
+#   DOWNLOAD_EXTRACT_TIMESTAMP TRUE
+#   URL https://github.com/foxglove/foxglove-sdk/releases/download/sdk%2Fv0.9.1/foxglove-v0.9.1-cpp-x86_64-unknown-linux-gnu.zip
+#   URL_HASH SHA256=7a9463270fac3cdf99ca5d41e597cae41e2c8b59a48b9eafec7a9ad6a70b11b1
+# )
 FetchContent_Declare(
   foxglove
   DOWNLOAD_EXTRACT_TIMESTAMP TRUE
-  URL https://github.com/foxglove/foxglove-sdk/releases/download/sdk%2Fv0.9.1/foxglove-v0.9.1-cpp-x86_64-unknown-linux-gnu.zip
-  URL_HASH SHA256=7a9463270fac3cdf99ca5d41e597cae41e2c8b59a48b9eafec7a9ad6a70b11b1
+  URL https://github.com/jlack1987/foxglove-sdk.git
+  GIT_TAG SHA256=4418b1b815ae352f1402fc4500e8e2c3a497e31e
 )
 FetchContent_MakeAvailable(foxglove)
 
