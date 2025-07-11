@@ -13,7 +13,7 @@ include(FetchContent)
 FetchContent_Declare(
   foxglove
   DOWNLOAD_EXTRACT_TIMESTAMP TRUE
-  URL https://github.com/jlack1987/foxglove-sdk.git
+  GIT_REPOSITORY https://github.com/jlack1987/foxglove-sdk.git
   GIT_TAG SHA256=4418b1b815ae352f1402fc4500e8e2c3a497e31e
 )
 FetchContent_MakeAvailable(foxglove)
